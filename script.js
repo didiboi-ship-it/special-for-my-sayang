@@ -18,3 +18,17 @@ function openWhen(type){document.getElementById('modal-content').innerHTML=`<h3>
 function closeModal(e){if(!e||e.target.id==='modal')document.getElementById('modal').classList.remove('show')}
 function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
 for(let i=0;i<12;i++){const h=document.createElement('span');h.className='heart';h.textContent='♡';h.style.left=Math.random()*100+'%';h.style.animationDelay=Math.random()*6+'s';h.style.fontSize=(12+Math.random()*14)+'px';document.querySelector('.hearts').appendChild(h)}
+
+const normalScroll=scrollToSection;
+document.body.insertAdjacentHTML('beforeend',`<div class="password-gate" id="passwordGate"><div class="password-card"><button class="close password-close" type="button">×</button><div class="password-heart">💗</div><p class="eyebrow">Only for my sayang</p><h2>Before you enter...</h2><p>Prove that you're really my sayang dulu hshshsh 🤭❤️</p><input id="passwordInput" class="password-input" type="password" placeholder="Enter our secret password" autocomplete="off"><button id="passwordSubmit" class="primary-btn password-btn" type="button">Let me in ❤️</button><p class="password-error" id="passwordError"></p></div></div>`);
+const gate=document.getElementById('passwordGate');
+const pwInput=document.getElementById('passwordInput');
+const pwError=document.getElementById('passwordError');
+function openPasswordGate(){gate.classList.add('show');pwError.textContent='';setTimeout(()=>pwInput.focus(),100)}
+function closePasswordGate(){gate.classList.remove('show')}
+function checkLittleWorldKey(){const key=String.fromCharCode(114,97,107,117,115);if(pwInput.value.trim().toLowerCase()===key){closePasswordGate();pwInput.value='';pwError.textContent='';normalScroll('world')}else{pwError.textContent='Aik 🤨 sayang baby ke bukan ni HAHAHA ❤️';pwInput.classList.remove('shake');void pwInput.offsetWidth;pwInput.classList.add('shake')}}
+scrollToSection=function(id){if(id==='world'){openPasswordGate()}else{normalScroll(id)}};
+document.getElementById('passwordSubmit').addEventListener('click',checkLittleWorldKey);
+pwInput.addEventListener('keydown',e=>{if(e.key==='Enter')checkLittleWorldKey()});
+document.querySelector('.password-close').addEventListener('click',closePasswordGate);
+gate.addEventListener('click',e=>{if(e.target===gate)closePasswordGate()});
