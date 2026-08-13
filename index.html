@@ -1,63 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Little Place For My Sayang ❤️</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="hearts" aria-hidden="true"></div>
-  <main>
-    <section class="hero" id="home">
-      <p class="eyebrow">A little surprise, made just for you</p>
-      <h1>Hi, <span>sayang</span> ❤️</h1>
-      <p class="hero-text">Baby made this little place just for sayang, sebab ada benda yang baby lagi senang tunjuk melalui little things macam ni.</p>
-      <button class="primary-btn" onclick="scrollToSection('world')">Enter My Little World</button>
-      <p class="tiny">Please explore everything sampai habis okay? 🤍</p>
-    </section>
-
-    <section class="section memory-feature" id="world">
-      <div class="photo-wrap"><div class="photo-card"><img src="our-photo.jpg" alt="Our favourite memory together"><div class="photo-caption">My favourite place is wherever you are. ❤️</div></div></div>
-      <div class="section-heading"><p class="eyebrow">A place for us</p><h2>Our Little World</h2></div>
-      <div class="card-grid">
-        <button class="menu-card" onclick="openModal('message')"><span class="icon">💌</span><span class="card-title">A Message From Baby</span><span class="card-desc">Something I want you to know.</span></button>
-        <button class="menu-card" onclick="scrollToSection('memories')"><span class="icon">📸</span><span class="card-title">Our Little Memories</span><span class="card-desc">Little moments that mean a lot.</span></button>
-        <button class="menu-card" onclick="openModal('songs')"><span class="icon">🎧</span><span class="card-title">Our Song</span><span class="card-desc">The song that reminds me of us.</span></button>
-        <button class="menu-card" onclick="openModal('choose')"><span class="icon">💗</span><span class="card-title">Why I Choose You</span><span class="card-desc">A few reasons, from my heart.</span></button>
-      </div>
-    </section>
-
-    <section class="section memories-section" id="memories">
-      <div class="section-heading"><p class="eyebrow">Our story, one little moment at a time</p><h2>Our Little Memories 📸</h2><p>Tap any photo, sayang. Every picture has a little story behind it. ❤️</p></div>
-      <div class="polaroid-grid">
-        <button class="memory-polaroid" onclick="openMemory(0)"><img src="memory1.jpg" alt="The First Time We Met"><span>❤️ The First Time We Met</span><small>our beginning</small></button>
-        <button class="memory-polaroid" onclick="openMemory(1)"><img src="memory2.jpg" alt="Our First Date As Someone Special"><span>☕ Our First Date</span><small>as someone special</small></button>
-        <button class="memory-polaroid" onclick="openMemory(2)"><img src="memory3.jpg" alt="Our Second Date"><span>🎡 Our Second Date</span><small>i-City Mall</small></button>
-        <button class="memory-polaroid" onclick="openMemory(3)"><img src="memory4.jpg" alt="Our Third Date"><span>🌷 Our Third Date</span><small>Quayside Mall</small></button>
-        <button class="memory-polaroid" onclick="openMemory(4)"><img src="memory5.jpg" alt="Our Fourth Date"><span>🕷️❤️ Our Fourth Date</span><small>Spider-Man with sayang</small></button>
-        <button class="memory-polaroid" onclick="openMemory(5)"><img src="memory6.jpg" alt="Meet Caja"><span>🐘❤️ Meet Caja</span><small>baby's little replacement</small></button>
-      </div>
-    </section>
-
-    <section class="section open-when" id="open-when">
-      <div class="section-heading"><p class="eyebrow">Whenever you need me</p><h2>Open When...</h2><p>Pick one. Read it slowly. And remember baby is always on your side.</p></div>
-      <div class="envelope-grid">
-        <button class="envelope" onclick="openWhen('sad')"><span>🥺</span><b>you're sad</b><small>open me</small></button>
-        <button class="envelope" onclick="openWhen('miss')"><span>🌙</span><b>you miss me</b><small>open me</small></button>
-        <button class="envelope" onclick="openWhen('blame')"><span>😔</span><b>you blame yourself</b><small>open me</small></button>
-        <button class="envelope" onclick="openWhen('fight')"><span>🤍</span><b>we're fighting</b><small>open me</small></button>
-        <button class="envelope" onclick="openWhen('reassurance')"><span>❤️</span><b>you need reassurance</b><small>open me</small></button>
-        <button class="envelope" onclick="openWhen('loved')"><span>🫶🏻</span><b>you need to feel loved</b><small>open me</small></button>
-      </div>
-    </section>
-    <section class="section promise" id="promise"><div class="promise-box"><p class="eyebrow">One thing I want us to remember</p><h2>It's us against the problem.</h2><p>Not me against you. Not you against me. If something hurts, we talk. If one of us makes a mistake, we learn. And if things get hard, we face them together.</p><div class="signature">— Baby ❤️</div></div></section>
-    <footer>Made with love, from baby to sayang. ❤️</footer>
-  </main>
-  <div class="modal" id="modal" onclick="closeModal(event)"><div class="modal-box" onclick="event.stopPropagation()"><button class="close" onclick="closeModal()">×</button><div id="modal-content"></div></div></div>
-  <script src="script.js"></script>
-</body>
-</html>
+<body><div class="hearts" aria-hidden="true"></div><main>
+<section class="hero" id="home"><p class="eyebrow">A little surprise, made just for you</p><h1>Hi, <span>sayang</span> ❤️</h1><p class="hero-text">Baby made this little place just for sayang, sebab ada benda yang baby lagi senang tunjuk melalui little things macam ni.</p><button class="primary-btn" onclick="scrollToSection('world')">Enter My Little World</button><p class="tiny">Please explore everything sampai habis okay? 🤍</p></section>
+<section class="section memory-feature" id="world"><div class="photo-wrap"><div class="photo-card"><img src="our-photo.jpg" alt="Our favourite memory together"><div class="photo-caption">My favourite place is wherever you are. ❤️</div></div></div><div class="section-heading"><p class="eyebrow">A place for us</p><h2>Our Little World</h2></div><div class="card-grid"><button class="menu-card" onclick="openModal('message')"><span class="icon">💌</span><span class="card-title">A Message From Baby</span><span class="card-desc">Something I want you to know.</span></button><button class="menu-card" onclick="scrollToSection('memories')"><span class="icon">📸</span><span class="card-title">Our Little Memories</span><span class="card-desc">Little moments that mean a lot.</span></button><button class="menu-card" onclick="openModal('songs')"><span class="icon">🎧</span><span class="card-title">Our Song</span><span class="card-desc">The song that reminds me of us.</span></button><button class="menu-card" onclick="openModal('choose')"><span class="icon">💗</span><span class="card-title">Why I Choose You</span><span class="card-desc">A few reasons, from my heart.</span></button></div></section>
+<section class="section memories-section" id="memories"><div class="section-heading"><p class="eyebrow">Our story, one little moment at a time</p><h2>Our Little Memories 📸</h2><p>Tap any photo, sayang. Every picture has a little story behind it. ❤️</p></div><div class="polaroid-grid"><button class="memory-polaroid" onclick="openMemory(0)"><img src="memory1.jpg" alt="The First Time We Met"><span>❤️ The First Time We Met</span><small>our beginning</small></button><button class="memory-polaroid" onclick="openMemory(1)"><img src="memory2.jpg" alt="Our First Date As Someone Special"><span>☕ Our First Date</span><small>as someone special</small></button><button class="memory-polaroid" onclick="openMemory(2)"><img src="memory3.jpg" alt="Our Second Date"><span>🎡 Our Second Date</span><small>i-City Mall</small></button><button class="memory-polaroid" onclick="openMemory(3)"><img src="memory4.jpg" alt="Our Third Date"><span>🌷 Our Third Date</span><small>Quayside Mall</small></button><button class="memory-polaroid" onclick="openMemory(4)"><img src="memory5.jpg" alt="Our Fourth Date"><span>🕷️❤️ Our Fourth Date</span><small>Spider-Man with sayang</small></button><button class="memory-polaroid" onclick="openMemory(5)"><img src="memory6.jpg" alt="Meet Caja"><span>🐘❤️ Meet Caja</span><small>baby's little replacement</small></button></div></section>
+<section class="section open-when" id="open-when"><div class="section-heading"><p class="eyebrow">Whenever you need me</p><h2>Open When...</h2><p>Pick one. Read it slowly. And remember baby is always on your side.</p></div><div class="envelope-grid"><button class="envelope" onclick="openWhen('sad')"><span>🥺</span><b>you're sad</b><small>open me</small></button><button class="envelope" onclick="openWhen('miss')"><span>🌙</span><b>you miss me</b><small>open me</small></button><button class="envelope" onclick="openWhen('blame')"><span>😔</span><b>you blame yourself</b><small>open me</small></button><button class="envelope" onclick="openWhen('fight')"><span>🤍</span><b>we're fighting</b><small>open me</small></button><button class="envelope" onclick="openWhen('reassurance')"><span>❤️</span><b>you need reassurance</b><small>open me</small></button><button class="envelope" onclick="openWhen('loved')"><span>🫶🏻</span><b>you need to feel loved</b><small>open me</small></button></div></section>
+<section class="section promise" id="promise"><div class="promise-box"><p class="eyebrow">One thing I want us to remember</p><h2>It's us against the problem.</h2><p>Not me against you. Not you against me. If something hurts, we talk. If one of us makes a mistake, we learn. And if things get hard, we face them together.</p><div class="signature">— Baby ❤️</div></div></section><footer>Made with love, from baby to sayang. ❤️</footer></main>
+<div class="modal" id="modal" onclick="closeModal(event)"><div class="modal-box" onclick="event.stopPropagation()"><button class="close" onclick="closeModal()">×</button><div id="modal-content"></div></div></div>
+<script src="script.js"></script>
+<script>
+const memoryStories=[
+{img:'memory1.jpg',title:'❤️ Memory 1 — The First Time We Met',body:`Ni antara memory yang baby rasa baby takkan lupa hshshsh. First time kita keluar sama-sama and paling penting… first time baby jumpa sayang depan-depan. Dari yang sebelum ni cuma chat and tengok dekat phone, finally hari tu baby dapat tengok sayang betul-betul depan mata baby. Kita pergi tengok Papa Zola sama-sama and maybe bagi orang lain benda tu nampak macam keluar tengok movie biasa je, tapi untuk baby hari tu special sebab itulah permulaan kepada banyak lagi moment kita selepas tu. Bila baby tengok gambar ni balik, baby mesti teringat… ‘haa ni la hari first time baby jumpa sayang baby.’ ❤️`},
+{img:'memory2.jpg',title:'☕ Memory 2 — Our First Date As Someone Special',body:`Yang ni pulak first date kita bila kita dah jadi someone special dekat each other hshshsh 🤭. Kita pergi cafe yang sayang suggest and honestly baby bukan ingat cafe tu semata-mata, baby lagi ingat siapa yang duduk dengan baby masa tu. Ada something yang rasa different sebab kali ni baby keluar dengan sayang bukan macam first time kita jumpa dulu… kali ni baby keluar dengan seseorang yang dah ada tempat special dalam hati baby. ❤️`},
+{img:'memory3.jpg',title:'🎡 Memory 3 — Our Second Date',body:`Second date kitaaa hshshsh. Kali ni kita pergi i-City Mall sama-sama. Lagi banyak masa baby spend dengan sayang, lagi banyak little things pasal sayang yang baby dapat kenal. Baby suka benda macam ni tau… tak semestinya kita kena pergi tempat mahal or buat benda grand pun. Asalkan baby dapat jalan sebelah sayang, sembang, gelak and spend time together, benda simple macam tu pun dah boleh jadi favourite memory baby. 🤍`},
+{img:'memory4.jpg',title:'🌷 Memory 4 — Our Third Date',body:`Third date kita dekat Quayside Mall ❤️. Bila baby tengok balik gambar ni, baby sedar yang sedikit demi sedikit kita tengah kumpul memories kita sendiri. First jumpa, first date, second date and sekarang third date. Maybe masa kita tengah keluar tu kita tak fikir jauh pun pasal benda ni, kita cuma enjoy masa kita together. Tapi sekarang bila baby tengok balik semua gambar ni satu-satu, baby rasa happy sebab baby dapat lalui semua moment tu dengan sayang.`},
+{img:'memory5.jpg',title:'🕷️❤️ Memory 5 — Our Fourth Date',body:`Fourth date kitaaa ❤️ kali ni kita pergi tengok Spider-Man and spend time sama-sama. Baby memang suka Spider-Man hshshsh, tapi hari tu favourite part baby bukan movie tu je… favourite part baby adalah sebab baby dapat tengok movie tu dengan sayang. Benda yang baby suka + orang yang baby sayang, memang combo paling ngam la HAHAHA. And macam date-date kita sebelum ni, baby hargai setiap masa yang kita dapat spend together sebab baby tau bila kita berjauhan nanti, moment simple macam ni la yang baby akan rindu.`},
+{img:'memory6.jpg',title:'🐘❤️ Memory 6 — Meet Caja',body:`And last sekali… meet Caja hshshsh 🐘❤️. Baby masih ingat sayang teringin sangat-sangat nak patung gajah ni, and sebab tu baby decide nak bagi Caja dekat sayang as a surprise. Baby suka dapat bagi sayang benda yang sayang memang nak, lagi-lagi bila baby boleh tengok sendiri reaction sayang masa dapat benda yang sayang teringin sangat tu hshshsh. Bagi orang lain maybe dia cuma patung gajah biasa, tapi untuk baby, Caja ada cerita dia sendiri dalam relationship kita.\n\nKita bagi nama dia Caja, and baby anggap Caja macam little replacement baby bila baby jauh dengan sayang. Bila baby tak ada sebelah sayang, bila sayang rindu baby or malam-malam sayang rasa nak peluk baby tapi kita jauh… peluk Caja kuat-kuat okay? Anggap je masa tu sayang tengah peluk baby hshshsh. Baby tau Caja tak boleh membebel, kacau sayang, call sayang or cakap ‘I love you’ macam baby boleh 😂 tapi at least dia boleh teman sayang bila baby tak dapat ada depan sayang.\n\nSo sayang kena jaga Caja elok-elok tauu. Baby bagi dia dekat sayang bukan sekadar sebab sayang teringin sangat nak dia, tapi akhirnya Caja jadi something yang ada meaning untuk kita berdua. Dia jadi little reminder daripada baby untuk sayang yang walaupun baby jauh, sayang tetap ada sesuatu daripada baby dekat dengan sayang.\n\nAnd satu hari nanti bila kita dah tak perlu berjauhan macam sekarang, baby nak kita tengok Caja balik and ingat zaman ni… zaman yang kalau sayang rindu baby, Caja la yang kena jadi mangsa peluk sayang dulu HAHAHA 🐘❤️.`}
+];
+function openMemory(i){const m=memoryStories[i];document.getElementById('modal-content').innerHTML=`<img class="memory-modal-img" src="${m.img}" alt="${m.title}"><h3>${m.title}</h3><div class="memory-story">${m.body.split('\n\n').map(p=>`<p>${p}</p>`).join('')}</div>`;document.getElementById('modal').classList.add('show')}
+</script>
+</body></html>
