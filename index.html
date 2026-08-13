@@ -11,7 +11,6 @@
 </head>
 <body>
   <div class="hearts" aria-hidden="true"></div>
-
   <main>
     <section class="hero" id="home">
       <p class="eyebrow">A little surprise, made just for you</p>
@@ -22,42 +21,30 @@
     </section>
 
     <section class="section memory-feature" id="world">
-      <div class="photo-wrap">
-        <div class="photo-card">
-          <img src="our-photo.jpg" alt="Our favourite memory together">
-          <div class="photo-caption">My favourite place is wherever you are. ❤️</div>
-        </div>
-      </div>
-      <div class="section-heading">
-        <p class="eyebrow">A place for us</p>
-        <h2>Our Little World</h2>
-      </div>
+      <div class="photo-wrap"><div class="photo-card"><img src="our-photo.jpg" alt="Our favourite memory together"><div class="photo-caption">My favourite place is wherever you are. ❤️</div></div></div>
+      <div class="section-heading"><p class="eyebrow">A place for us</p><h2>Our Little World</h2></div>
       <div class="card-grid">
-        <button class="menu-card" onclick="openModal('message')">
-          <span class="icon">💌</span><span class="card-title">A Message From Baby</span>
-          <span class="card-desc">Something I want you to know.</span>
-        </button>
-        <button class="menu-card" onclick="openModal('memories')">
-          <span class="icon">📸</span><span class="card-title">Our Little Memories</span>
-          <span class="card-desc">Little moments that mean a lot.</span>
-        </button>
-        <button class="menu-card" onclick="openModal('songs')">
-          <span class="icon">🎧</span><span class="card-title">Our Songs</span>
-          <span class="card-desc">Songs that remind me of you.</span>
-        </button>
-        <button class="menu-card" onclick="openModal('choose')">
-          <span class="icon">💗</span><span class="card-title">Why I Choose You</span>
-          <span class="card-desc">A few reasons, from my heart.</span>
-        </button>
+        <button class="menu-card" onclick="openModal('message')"><span class="icon">💌</span><span class="card-title">A Message From Baby</span><span class="card-desc">Something I want you to know.</span></button>
+        <button class="menu-card" onclick="scrollToSection('memories')"><span class="icon">📸</span><span class="card-title">Our Little Memories</span><span class="card-desc">Little moments that mean a lot.</span></button>
+        <button class="menu-card" onclick="openModal('songs')"><span class="icon">🎧</span><span class="card-title">Our Song</span><span class="card-desc">The song that reminds me of us.</span></button>
+        <button class="menu-card" onclick="openModal('choose')"><span class="icon">💗</span><span class="card-title">Why I Choose You</span><span class="card-desc">A few reasons, from my heart.</span></button>
+      </div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading"><p class="eyebrow">Our story, one little moment at a time</p><h2>Our Little Memories 📸</h2><p>Tap any photo, sayang. Every picture has a little story behind it. ❤️</p></div>
+      <div class="polaroid-grid">
+        <button class="memory-polaroid" onclick="openMemory(0)"><img src="memory1.jpg" alt="The First Time We Met"><span>❤️ The First Time We Met</span><small>our beginning</small></button>
+        <button class="memory-polaroid" onclick="openMemory(1)"><img src="memory2.jpg" alt="Our First Date As Someone Special"><span>☕ Our First Date</span><small>as someone special</small></button>
+        <button class="memory-polaroid" onclick="openMemory(2)"><img src="memory3.jpg" alt="Our Second Date"><span>🎡 Our Second Date</span><small>i-City Mall</small></button>
+        <button class="memory-polaroid" onclick="openMemory(3)"><img src="memory4.jpg" alt="Our Third Date"><span>🌷 Our Third Date</span><small>Quayside Mall</small></button>
+        <button class="memory-polaroid" onclick="openMemory(4)"><img src="memory5.jpg" alt="Our Fourth Date"><span>🕷️❤️ Our Fourth Date</span><small>Spider-Man with sayang</small></button>
+        <button class="memory-polaroid" onclick="openMemory(5)"><img src="memory6.jpg" alt="Meet Caja"><span>🐘❤️ Meet Caja</span><small>baby's little replacement</small></button>
       </div>
     </section>
 
     <section class="section open-when" id="open-when">
-      <div class="section-heading">
-        <p class="eyebrow">Whenever you need me</p>
-        <h2>Open When...</h2>
-        <p>Pick one. Read it slowly. And remember baby is always on your side.</p>
-      </div>
+      <div class="section-heading"><p class="eyebrow">Whenever you need me</p><h2>Open When...</h2><p>Pick one. Read it slowly. And remember baby is always on your side.</p></div>
       <div class="envelope-grid">
         <button class="envelope" onclick="openWhen('sad')"><span>🥺</span><b>you're sad</b><small>open me</small></button>
         <button class="envelope" onclick="openWhen('miss')"><span>🌙</span><b>you miss me</b><small>open me</small></button>
@@ -67,26 +54,10 @@
         <button class="envelope" onclick="openWhen('loved')"><span>🫶🏻</span><b>you need to feel loved</b><small>open me</small></button>
       </div>
     </section>
-
-    <section class="section promise" id="promise">
-      <div class="promise-box">
-        <p class="eyebrow">One thing I want us to remember</p>
-        <h2>It's us against the problem.</h2>
-        <p>Not me against you. Not you against me. If something hurts, we talk. If one of us makes a mistake, we learn. And if things get hard, we face them together.</p>
-        <div class="signature">— Baby ❤️</div>
-      </div>
-    </section>
-
+    <section class="section promise" id="promise"><div class="promise-box"><p class="eyebrow">One thing I want us to remember</p><h2>It's us against the problem.</h2><p>Not me against you. Not you against me. If something hurts, we talk. If one of us makes a mistake, we learn. And if things get hard, we face them together.</p><div class="signature">— Baby ❤️</div></div></section>
     <footer>Made with love, from baby to sayang. ❤️</footer>
   </main>
-
-  <div class="modal" id="modal" onclick="closeModal(event)">
-    <div class="modal-box" onclick="event.stopPropagation()">
-      <button class="close" onclick="closeModal()">×</button>
-      <div id="modal-content"></div>
-    </div>
-  </div>
-
+  <div class="modal" id="modal" onclick="closeModal(event)"><div class="modal-box" onclick="event.stopPropagation()"><button class="close" onclick="closeModal()">×</button><div id="modal-content"></div></div></div>
   <script src="script.js"></script>
 </body>
 </html>
