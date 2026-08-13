@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Place For My Sayang ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">A little surprise, made just for you</p>
+      <h1>Hi, <span>Sayang</span> ❤️</h1>
+      <p class="hero-text">Baby made this little place because some things are easier to feel when they're written down.</p>
+      <button class="primary-btn" onclick="scrollToSection('world')">Enter My Little World</button>
+      <p class="tiny">Please explore everything sampai habis okay? 🤍</p>
+    </section>
+
+    <section class="section" id="world">
+      <div class="section-heading">
+        <p class="eyebrow">A place for us</p>
+        <h2>Our Little World</h2>
+      </div>
+      <div class="card-grid">
+        <button class="menu-card" onclick="openModal('message')">
+          <span class="icon">💌</span><span class="card-title">A Message From Baby</span>
+          <span class="card-desc">Something I want you to know.</span>
+        </button>
+        <button class="menu-card" onclick="openModal('memories')">
+          <span class="icon">📸</span><span class="card-title">Our Little Memories</span>
+          <span class="card-desc">Little moments that mean a lot.</span>
+        </button>
+        <button class="menu-card" onclick="openModal('songs')">
+          <span class="icon">🎧</span><span class="card-title">Our Songs</span>
+          <span class="card-desc">Songs that remind me of you.</span>
+        </button>
+        <button class="menu-card" onclick="openModal('choose')">
+          <span class="icon">💗</span><span class="card-title">Why I Choose You</span>
+          <span class="card-desc">A few reasons, from my heart.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section open-when" id="open-when">
+      <div class="section-heading">
+        <p class="eyebrow">Whenever you need me</p>
+        <h2>Open When...</h2>
+        <p>Pick one. Read it slowly. And remember baby is always on your side.</p>
+      </div>
+      <div class="envelope-grid">
+        <button class="envelope" onclick="openWhen('sad')"><span>🥺</span><b>you're sad</b><small>open me</small></button>
+        <button class="envelope" onclick="openWhen('miss')"><span>🌙</span><b>you miss me</b><small>open me</small></button>
+        <button class="envelope" onclick="openWhen('blame')"><span>😔</span><b>you blame yourself</b><small>open me</small></button>
+        <button class="envelope" onclick="openWhen('fight')"><span>🤍</span><b>we're fighting</b><small>open me</small></button>
+        <button class="envelope" onclick="openWhen('reassurance')"><span>❤️</span><b>you need reassurance</b><small>open me</small></button>
+        <button class="envelope" onclick="openWhen('loved')"><span>🫶🏻</span><b>you need to feel loved</b><small>open me</small></button>
+      </div>
+    </section>
+
+    <section class="section promise" id="promise">
+      <div class="promise-box">
+        <p class="eyebrow">One thing I want us to remember</p>
+        <h2>It's us against the problem.</h2>
+        <p>Not me against you. Not you against me. If something hurts, we talk. If one of us makes a mistake, we learn. And if things get hard, we face them together.</p>
+        <div class="signature">— Baby, Adib ❤️</div>
+      </div>
+    </section>
+
+    <footer>Made with love, from one heart to another. ❤️</footer>
+  </main>
+
+  <div class="modal" id="modal" onclick="closeModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="close" onclick="closeModal()">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
